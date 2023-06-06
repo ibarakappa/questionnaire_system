@@ -5,9 +5,13 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.Table;
 
+import com.example.questionnaire_system.entity.QuestionOption.QuestionOptionId;
+
 @Entity
+@IdClass(QuestionOptionId.class)
 @Table(name = "question_option")
 public class QuestionOption implements Serializable {
 	private static final long serialVersionUID = 1L;

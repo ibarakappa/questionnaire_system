@@ -6,9 +6,11 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.Table;
 
 @Entity
+@IdClass(com.example.questionnaire_system.entity.Feedback.FeedbackId.class)
 @Table(name = "feedback")
 public class Feedback implements Serializable {
 	private static final long serialVersionUID = 1L;
